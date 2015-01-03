@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main" >
+    <item android:id="@+id/action_lefthouse"
+        android:title="@string/action_lefthouse"
+        android:orderInCategory="90"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_mdp"
+        android:title="@string/action_mdp"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="110"
+        android:showAsAction="never" />
+</menu>

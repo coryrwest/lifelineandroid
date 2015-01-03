@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="pref_home_network"
+        android:title="Home Network"
+        android:summary="@string/pref_home_network"
+        android:defaultValue="nobodyaskedyoupatrice" />
+
+    <EditTextPreference
+        android:key="pref_work_network"
+        android:title="Work Network"
+        android:summary="@string/pref_work_network"
+        android:defaultValue="ASM"/>
+
+    <EditTextPreference
+        android:key="pref_last_network"
+        android:title="Last Connected Network"
+        android:summary="@string/pref_last_network"
+        android:enabled="false"/>
+
+    <EditTextPreference
+        android:key="pref_last_connection_time"
+        android:title="Last Connection Time"
+        android:summary="@string/pref_last_connection_time"
+        android:defaultValue="N/A"
+        android:enabled="false"/>
+</PreferenceScreen>
