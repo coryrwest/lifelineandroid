@@ -36,7 +36,7 @@ public final class LifeLineDbHelper extends SQLiteOpenHelper {
             "CREATE TABLE " + StepData.TABLE_NAME + " (" +
                     StepData._ID + " INTEGER PRIMARY KEY," +
                     StepData.COLUMN_NAME_COUNT + " INTEGER" + COMMA_SEP +
-                    StepData.COLUMN_NAME_DATE + " DATE" + COMMA_SEP +
+                    StepData.COLUMN_NAME_DATE + " TEXT" +
                     " )";
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + StepData.TABLE_NAME;
@@ -70,9 +70,9 @@ public final class LifeLineDbHelper extends SQLiteOpenHelper {
                 StepData.COLUMN_NAME_COUNT
         };
 
-        String selection = StepData.COLUMN_NAME_DATE;
+        String selection = StepData.COLUMN_NAME_DATE + "=?";
 
-        String[] selectionArgs = { String.valueOf(date) };
+        String[] selectionArgs = { LifeLine.getCurrentDateAsString() };
 
         // How you want the results sorted in the resulting Cursor
         String sortOrder =
@@ -90,7 +90,7 @@ public final class LifeLineDbHelper extends SQLiteOpenHelper {
 
         Step step = new Step();
         if (c.getCount() == 0) {
-            step.date = date;
+            step.setDate(date);
             step.count = 0;
             step.isNew = true;
             return step;
@@ -104,7 +104,7 @@ public final class LifeLineDbHelper extends SQLiteOpenHelper {
                 c.getColumnIndexOrThrow(StepData._ID)
         );
 
-        step.date = date;
+        step.setDate(date);
         step.count = count;
         step.id = id;
         return step;
@@ -118,7 +118,7 @@ public final class LifeLineDbHelper extends SQLiteOpenHelper {
             // Create a new map of values, where column names are the keys
             ContentValues values = new ContentValues();
             values.put(StepData.COLUMN_NAME_COUNT, step.count);
-            values.put(StepData.COLUMN_NAME_DATE, String.valueOf(step.date));
+            values.put(StepData.COLUMN_NAME_DATE, step.getDate());
 
             // Insert the new row, returning the primary key value of the new row
             long newRowId;

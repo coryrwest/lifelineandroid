@@ -25,4 +25,4 @@
         android:summary="@string/pref_last_connection_time"
         android:defaultValue="N/A"
         android:enabled="false"/>
-</PreferenceScreen><!-- From: file:/home/cory/Desktop/lifelineandroid/app/src/main/res/xml/preferences.xml -->
+</PreferenceScreen><!-- From: file:/F:/Cory/Documents/Projects/LifeLineAndroid/app/src/main/res/xml/preferences.xml -->

@@ -66,6 +66,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_alignEnd="@+id/service_stop_btn"
-        android:onClick="sync" />
+        android:onClick="setSync" />
 
-</RelativeLayout><!-- From: file:/home/cory/Desktop/lifelineandroid/app/src/main/res/layout/activity_steps.xml -->
+</RelativeLayout><!-- From: file:/F:/Cory/Documents/Projects/LifeLineAndroid/app/src/main/res/layout/activity_steps.xml -->

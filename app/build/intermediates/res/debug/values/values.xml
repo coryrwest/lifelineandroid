@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/cory/Desktop/lifelineandroid/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Cory/Documents/Projects/LifeLineAndroid/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="types_array">
         <item>Water</item>
@@ -8,11 +8,11 @@
         <item>Sore</item>
         <item>Sick</item>
     </string-array>
-    <!-- From: file:/home/cory/Desktop/lifelineandroid/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/F:/Cory/Documents/Projects/LifeLineAndroid/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/home/cory/Desktop/lifelineandroid/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Cory/Documents/Projects/LifeLineAndroid/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_lefthouse">Launch Left House</string>
     <string name="action_mdp">Manual Data Point</string>
@@ -32,7 +32,7 @@
     <string name="step_detector">android.hardware.sensor.stepdetector</string>
     <string name="steps">Steps</string>
     <string name="water">Water</string>
-    <!-- From: file:/home/cory/Desktop/lifelineandroid/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/F:/Cory/Documents/Projects/LifeLineAndroid/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="android:Theme.Holo">
         <!-- Customize your theme here. -->
